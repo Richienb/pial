@@ -1,13 +1,8 @@
 const test = require("ava")
-const theModule = require(".")
+const pial = require(".")
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.false(pial(1))
+	t.true(pial(2))
+	t.false(pial(4))
 })

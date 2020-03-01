@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "pial",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Check if a number is a prime number.",
+	"repository": "https://github.com/Richienb/pial.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,7 +17,17 @@
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"prime",
+		"number",
+		"math",
+		"check",
+		"is",
+		"integer",
+		"modulo",
+		"divide",
+		"factors"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.3.0",

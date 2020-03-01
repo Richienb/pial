@@ -1,7 +1,10 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+// From https://stackoverflow.com/a/40200710/8384910
 
-	return `${input} & ${postfix}`
+module.exports = (number) => {
+	if (typeof number !== "number") throw new TypeError("A number must be provided!")
+
+	for (let i = 2, s = Math.sqrt(number); i <= s; i++) if (number % i === 0) return false
+	return number > 1
 }

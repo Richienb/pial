@@ -1,14 +1,17 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Check if a number is a prime number.
+ * @param number The number to check.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const pial = require("pial");
+ *
+ * pial(10);
+ * //=> true
+ *
+ * pial(10);
+ * //=> false
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function pial(number: number): boolean
 
-export = theModule;
+export = pial

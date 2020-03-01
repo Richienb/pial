@@ -1,41 +1,48 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Pial [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/pial/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/pial)
 
-My awesome module.
+Check if a number is a prime number. Extremely fast.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/pial.png)](https://npmjs.com/package/pial)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install pial
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const pial = require("pial");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+pial(10);
+//=> true
+
+pial(10);
+//=> false
+```
+
+## Tips
+
+Use `mem` to cache the return values.
+
+```js
+const mem = require("mem");
+const pial = mem(require("pial"));
+
+pial(10);
+//=> true
+
+pial(10); // Cached value
+//=> true
 ```
 
 ## API
 
-### theModule(input, options?)
+### pial(number)
 
-#### input
+#### number
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The number to check.

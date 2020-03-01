@@ -1,6 +1,6 @@
 {
 	"name": "pial",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Check if a number is a prime number.",
 	"repository": "https://github.com/Richienb/pial.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",

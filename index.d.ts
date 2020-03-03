@@ -5,10 +5,10 @@
  * ```
  * const pial = require("pial");
  *
- * pial(10);
+ * pial(3);
  * //=> true
  *
- * pial(10);
+ * pial(8);
  * //=> false
  * ```
 */

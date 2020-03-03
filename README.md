@@ -31,10 +31,10 @@ const mem = require("mem");
 const pial = mem(require("pial"));
 
 pial(10);
-//=> true
+//=> false
 
 pial(10); // Cached value
-//=> true
+//=> false
 ```
 
 ## API
